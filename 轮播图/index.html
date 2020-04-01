@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS轮播图</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 相对来说这个就是我们的案例点击选择input切换登陆注册的案例的一个扩展 -->
+
+    <!-- 图片+原点 -->
+    <!-- 通过input radio单选实现点击效果 -->
+    <!-- 不加上name属性会报错的 -->
+    <!-- <input type="radio" name="a" id="man">
+    <label for="man">男</label>
+    <input type="radio" name="a" id="women">
+    <label for="women">女</label> -->
+
+    <div class="imgbox">
+        <!-- checked 选框选中的 -->
+        <input type="radio" checked name="img" id="img1">
+        <img src="./images/1.png" alt="">
+        <input type="radio" name="img" id="img2">
+        <img src="./images/2.png" alt="">
+        <input type="radio" name="img" id="img3">
+        <img src="./images/3.png" alt="">
+        <input type="radio" name="img" id="img4">
+        <img src="./images/4.png" alt="">
+        <input type="radio" name="img" id="img5">
+        <img src="./images/5.png" alt="">
+
+        <!-- img是块级元素，虽然可以在一行显示 -->
+        <div class="point">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+            <label for="img5"></label>
+        </div>
+    </div>
+</body>
+</html>

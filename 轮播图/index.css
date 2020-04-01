@@ -1,0 +1,42 @@
+.imgbox {
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.imgbox>input {
+    display: none;
+}
+
+.imgbox>img {
+    width: 250px;
+    height: 150px;
+    /* 层叠放在一起 */
+    position: absolute;
+    /* 相对于父元素imgbox进行定位 */
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.point {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* 设置行内块元素居中用： */
+    text-align: center;
+}
+
+.point>label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #000;
+}
+
+.imgbox>input:checked+img {
+    opacity: 1;
+}
