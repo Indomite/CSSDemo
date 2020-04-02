@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            /* 没有设置宽高时，由里面的元素撑开 
+            当里面的元素不是全部有浮动属性就可以撑开*/
+            /* width: 600px;
+            height: 600px; */
+            /* clear: both;    清除浮动 */
+            background-color: pink;
+        }
+        #box>div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* float: left; */
+        }
+        #box>div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* float: left; */
+        }
+        #box>div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 当前两个左浮动时，这个元素右浮动放不下就会放在下一行
+            放得下的时候回往右边放的，但是如果前面有右浮动时，就会一次往右放 */
+            float: right;
+        }
+        /* span {
+            //但是加上属性之后就可以设置宽高属性了
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            float: left;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 1.浮动定位：
+    只有左右浮动，不会重叠，一旦浮动了，display失效
+        将元素排除在普通流之外  元素将不在页面中占据空间    
+        将浮动元素放置在包含边框的左边或者右边      浮动元素依旧位于包含框之内
+    浮动元素的框可以左移或右移，直到边缘碰到含框或另一个浮动的边框为止 -->
+    
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- 行内元素没有宽高属性，并且不会独占一行 -->
+    <!-- <span>
+        我这是在学CSS
+    </span>
+    <span>
+        我这是在学CSS
+    </span> -->
+
+</body>
+</html>
