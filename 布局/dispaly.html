@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 640px;
+            height: 640px;
+            margin: 0;
+            background: pink;
+        }
+        .box>div:first-child {
+            width: 600px;
+            height: 200px;
+            background: yellow;
+            margin: 10px 0 0 20px;
+            /* margin-top: 10px; */
+            /* padding-top: 10px;  */
+        }
+        .box>div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            float: left;
+            margin: 10px 0 0 10px;
+        }
+        .box>div:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: left;
+            margin: 10px;
+        }
+        .box>div:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            background: gray;
+            float: left;
+            margin: 10px 0;
+        }
+        .box>div:nth-child(5) {
+            width: 600px;
+            height: 200px;
+            background: red;
+            float: left;
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 网页的每一个元素都有一个display属性，用于确定该元素的类型
+    就比如说行内元素和块元素
+    通常使用display来改变块元素和行元素 -->
+
+    <div class="box">
+        <div>顶部元素</div>
+        <div>左侧元素</div>
+        <div class="self">中间元素</div>
+        <div>右侧元素</div>
+        <div>底部元素</div>
+    </div>
+</body>
+</html>
