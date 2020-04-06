@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 div {
     box-sizing: border-box;
 }
@@ -77,4 +83,60 @@ div {
     background: url(../images/sprite.png) no-repeat 1px -36px;
     background-size: 21px auto;
     margin: 1px auto 0;
+}
+
+.focus {
+    padding-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    background-color: #fff;
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-nav-icon {
+    width: 32px;
+    height: 32px;
+    background: pink;
+    margin-top: 3px;
+}
+
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px 3px;
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background: pink;
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1;
+}
+
+.nav-items:nth-child(-n+2) {
+    border-radius: 1px solid #fff;
 }
