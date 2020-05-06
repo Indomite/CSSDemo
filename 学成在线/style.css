@@ -253,6 +253,7 @@ a {
 
 .box-bd ul li {
     float: left;
+    position: relative;
     width: 228px;
     height: 270px;
     background: #fff;
@@ -260,8 +261,14 @@ a {
     margin-bottom: 15px;
 }
 
-.box-bd ul li img {
+.box-bd ul li>img {
     width: 100%;
+}
+
+.box ul li em {
+    position: absolute;
+    top: 10px;
+    right: 0;
 }
 
 .box-bd ul li h4 {
